@@ -1,0 +1,42 @@
+{
+  "name": "backend-personal-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.46.0",
+    "@sentry/node": "^11.7.0",
+    "axios": "^1.20.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "nodemailer": "^10.1.0",
+    "pino": "^9.5.0",
+    "pino-http": "^10.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^16.5.0",
+    "nodemon": "^3.1.0",
+    "pino-pretty": "^13.0.0",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}
